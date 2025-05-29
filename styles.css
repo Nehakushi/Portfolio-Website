@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.red-text {
+  color: red;
+  font-weight: bold;
+}
+
+.animated-welcome {
+  font-size: 24px;
+  font-weight: bold;
+  color: #FFA500;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+#wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.logo-text {
+  color: #FFA500;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 1rem;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.nav-items .nav-link {
+  color: #FFA500;
+  text-decoration: none;
+  margin-left: 2rem;
+  transition: color 0.3s;
+}
+
+.nav-items .nav-link:hover {
+  color: #fff;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 4rem 0;
+}
+
+.hero-section-heading {
+  font-size: 2.5rem;
+  color: #FFA500;
+}
+
+.hero-section-sub-heading {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.hero-section-description {
+  max-width: 600px;
+  margin: 1rem auto;
+}
+
+.btn-yellow {
+  background-color: #FFD700;
+  color: #000;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+.btn-yellow:hover {
+  background-color: #fff;
+}
+
+.user-image {
+  width: 200px;
+  border-radius: 50%;
+  margin-top: 2rem;
+  transition: transform 0.5s ease; /* Transition effect */
+}
+
+.user-image:hover {
+  transform: scale(1.05); /* Scale effect on hover */
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #FFD700;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.project-section, .skills-section, .resume-section, .contact-section, .testimonials-section {
+  margin: 4rem 0;
+}
+
+.project-card, .testimonial-card {
+  background-color: #111;
+  padding: 2rem;
+  border: 1px solid #FFD700;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  animation: fadeIn 1.2s ease forwards;
+}
+
+.project-card h3, .testimonial-card h4 {
+  color: #FFD700;
+}
+
+.btn-group {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.more-projects {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.skills-grid-horizontal {
+  display: flex;
+  justify-content: space-around;
+}
+
+.skill-group {
+  text-align: center;
+}
+
+.skill-group h3 {
+  color: #FFD700;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.skill-group ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skill-group li {
+  background: #FFD700;
+  color: #000;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  margin: 0.25rem 0;
+  text-align: center;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 0.7rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: #111;
+  color: #888;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .hero-section { padding: 2rem 1rem; }
+  .nav-items { flex-direction: column; align-items: flex-start; }
+}

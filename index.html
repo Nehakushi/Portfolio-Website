@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neha V M Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <header class="navbar">
+      <div class="logo-container">
+        <div class="logo-text animated-welcome">Welcome</div>
+      </div>
+      <nav class="nav-items">
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#resume" class="nav-link">Resume</a>
+        <a href="#contactme" class="nav-link">Contact Me</a>
+        <a href="#testimonials" class="nav-link">Testimonials</a>
+      </nav>
+    </header>
+
+    <section class="hero-section">
+      <div class="hero-section-left">
+        <h1 class="hero-section-heading">Hi! I'm Neha V M</h1>
+        <h2 class="hero-section-sub-heading">I am a <span class="role red-text"></span></h2>
+        <p class="hero-section-description">
+          A passionate developer skilled in Java, Python, Data Science and web development. Welcome to my digital portfolio.
+        </p>
+        <a href="mailto:nehakushi25@gmail.com" class="btn-yellow">Hire Me</a>
+      </div>
+      <div class="hero-section-right">
+        <img src="image/Neha.JPG" class="user-image" alt="Neha V M" />
+      </div>
+    </section>
+
+    <section class="project-section" id="projects">
+      <h2 class="section-title">Projects</h2>
+      <div class="project-card">
+        <h3>Bank Management System (Java)</h3>
+        <p>Automated banking operations with account handling, secure transaction processing, and reporting features for end-to-end financial management.</p>
+        <div class="btn-group">
+          <a href="https://github.com/Nehakushi" target="_blank" class="btn-yellow">GitHub</a>
+          <a href="https://linkedin.com/in/neha-vm" target="_blank" class="btn-yellow">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>Personal Portfolio Website</h3>
+        <p>Responsive animated portfolio site built with HTML, CSS, JavaScript and Tailwind CSS. Includes dynamic navigation, smooth scroll, and interactive elements.</p>
+        <div class="btn-group">
+          <a href="https://github.com/Nehakushi" target="_blank" class="btn-yellow">GitHub</a>
+          <a href="https://linkedin.com/in/neha-vm" target="_blank" class="btn-yellow">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>Tic-Tac-Toe Game (C++)</h3>
+        <p>Classic two-player Tic-Tac-Toe with an AI opponent, implemented in C++ featuring win-detection, a score tracker, and replay functionality.</p>
+        <div class="btn-group">
+          <a href="https://github.com/Nehakushi" target="_blank" class="btn-yellow">GitHub</a>
+          <a href="https://linkedin.com/in/neha-vm" target="_blank" class="btn-yellow">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="more-projects">
+        <a href="#" class="btn-yellow">More Projects</a>
+      </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid-horizontal">
+        <div class="skill-group">
+          <h3><strong>Web Development</strong></h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Tailwind CSS</li>
+            <li>SQL</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3><strong>Programming</strong></h3>
+          <ul>
+            <li>Java</li>
+            <li>Python</li>
+            <li>C++</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3><strong>Data Science</strong></h3>
+          <ul>
+            <li>Data Analysis</li>
+            <li>Machine Learning</li>
+            <li>Pandas, NumPy, Scikit-Learn</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="resume" class="resume-section">
+      <h2 class="section-title">Resume</h2>
+      <div style="text-align: center;">
+        <a href="/image/Resume/Neha_R21EM062_EEE.pdf" download class="btn-yellow">Download My Resume (PDF)</a>
+      </div>
+    </section>
+
+    <section id="testimonials" class="testimonials-section">
+      <h2 class="section-title">Testimonials</h2>
+      <div class="testimonial-card">
+        <p>"Neha is an exceptional developer! Her work on our project was outstanding."</p>
+        <h4>- Nikhilesh </h4>
+      </div>
+      <div class="testimonial-card">
+        <p>"I highly recommend Neha for any web development needs. She is very skilled and professional."</p>
+        <h4>- Pramathesh </h4>
+      </div>
+    </section>
+
+    <section id="contactme" class="contact-section">
+      <h2 class="section-title">Contact Me</h2>
+      <form class="contact-form" action="mailto:nehakushi25@gmail.com" method="POST" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn-yellow">Send Message</button>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2025 Neha V M | All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    new Typed(".role", {
+      strings: ["Web Developer", "Java Programmer", "C++ Coder", "Data Scientist"],
+      loop: true,
+      typeSpeed: 100,
+      backSpeed: 80,
+      backDelay: 1000,
+    });
+  </script>
+</body>
+
+</html>
